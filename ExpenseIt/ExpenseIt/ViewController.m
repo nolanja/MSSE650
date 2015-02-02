@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Trip.h"
 #import "TripSvcCache.h"
+#import "SecondViewController.h"
 
 @interface ViewController ()
 
@@ -43,7 +44,7 @@ TripSvcCache *tripSvc = nil;
 
 - (IBAction)cancelTrip:(id)sender {
     NSLog(@"cancelTrip");
-    [self.view endEditing:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

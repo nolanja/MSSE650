@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D6F3E741A7EB9A3006370F7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F3E731A7EB9A3006370F7 /* SecondViewController.m */; };
 		7DC746841A75A2840040B512 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746831A75A2840040B512 /* main.m */; };
 		7DC746871A75A2840040B512 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746861A75A2840040B512 /* AppDelegate.m */; };
 		7DC7468A1A75A2840040B512 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746891A75A2840040B512 /* ViewController.m */; };
@@ -29,6 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D6F3E721A7EB9A3006370F7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		7D6F3E731A7EB9A3006370F7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		7DC7467E1A75A2840040B512 /* ExpenseIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC746821A75A2840040B512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC746831A75A2840040B512 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -97,6 +100,8 @@
 				7DC7468E1A75A2840040B512 /* Images.xcassets */,
 				7DC746901A75A2840040B512 /* LaunchScreen.xib */,
 				7DC746811A75A2840040B512 /* Supporting Files */,
+				7D6F3E721A7EB9A3006370F7 /* SecondViewController.h */,
+				7D6F3E731A7EB9A3006370F7 /* SecondViewController.m */,
 			);
 			path = ExpenseIt;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D6F3E741A7EB9A3006370F7 /* SecondViewController.m in Sources */,
 				7DC746AA1A75C10B0040B512 /* Trip.m in Sources */,
 				7DC7468A1A75A2840040B512 /* ViewController.m in Sources */,
 				7DC746871A75A2840040B512 /* AppDelegate.m in Sources */,
@@ -434,6 +440,7 @@
 				7DC746A31A75A2840040B512 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7DC746A41A75A2840040B512 /* Build configuration list for PBXNativeTarget "ExpenseItTests" */ = {
 			isa = XCConfigurationList;
@@ -442,6 +449,7 @@
 				7DC746A61A75A2840040B512 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
