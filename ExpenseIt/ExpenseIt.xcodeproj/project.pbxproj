@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D04AF8A1A87F27A004FF3D8 /* TripSvcArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D04AF891A87F27A004FF3D8 /* TripSvcArchive.m */; };
 		7D6F3E741A7EB9A3006370F7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F3E731A7EB9A3006370F7 /* SecondViewController.m */; };
 		7DC746841A75A2840040B512 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746831A75A2840040B512 /* main.m */; };
 		7DC746871A75A2840040B512 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746861A75A2840040B512 /* AppDelegate.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7D04AF881A87F27A004FF3D8 /* TripSvcArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSvcArchive.h; sourceTree = "<group>"; };
+		7D04AF891A87F27A004FF3D8 /* TripSvcArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripSvcArchive.m; sourceTree = "<group>"; };
 		7D6F3E721A7EB9A3006370F7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		7D6F3E731A7EB9A3006370F7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		7DC7467E1A75A2840040B512 /* ExpenseIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +143,8 @@
 				7DC746AB1A75C2980040B512 /* TripSvc.h */,
 				7DC746AC1A75C3F60040B512 /* TripSvcCache.h */,
 				7DC746AD1A75C3F60040B512 /* TripSvcCache.m */,
+				7D04AF881A87F27A004FF3D8 /* TripSvcArchive.h */,
+				7D04AF891A87F27A004FF3D8 /* TripSvcArchive.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 				7D6F3E741A7EB9A3006370F7 /* SecondViewController.m in Sources */,
 				7DC746AA1A75C10B0040B512 /* Trip.m in Sources */,
 				7DC7468A1A75A2840040B512 /* ViewController.m in Sources */,
+				7D04AF8A1A87F27A004FF3D8 /* TripSvcArchive.m in Sources */,
 				7DC746871A75A2840040B512 /* AppDelegate.m in Sources */,
 				7DC746AE1A75C3F60040B512 /* TripSvcCache.m in Sources */,
 				7DC746841A75A2840040B512 /* main.m in Sources */,

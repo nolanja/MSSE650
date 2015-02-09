@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "TripSvcArchive.h"
+#import "Trip.h"
 
 @interface ExpenseItTests : XCTestCase
 
@@ -25,9 +27,25 @@
     [super tearDown];
 }
 
-- (void)testExample {
-    // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+- (void)testTripSvcArchive {
+    // This is test for the methods in the TripSvcArchive.
+    NSLog(@"*** Starting testTripSvcArchive ***");
+    TripSvcArchive *tripSvc = [[TripSvcArchive alloc] init];
+    unsigned long initialCount = [[tripSvc retrieveAllTrips]count];
+    
+    Trip *trip = [[Trip alloc] init];
+    trip.tripName = @"Trip 1";
+    trip.startDate = @"12/1/2015";
+    trip.endDate = @"12/7/2015";
+    
+    [tripSvc createTrip:(Trip *) trip];
+    unsigned long finalCount = [[tripSvc retrieveAllTrips] count];
+    
+    XCTAssertEqual(initialCount +1, finalCount,  @"initial count %lu, final count %lu ", initialCount, finalCount);
+    
+    NSLog(@"*** Ending testContactSvcArchive ***");
+    
+    
 }
 
 - (void)testPerformanceExample {
