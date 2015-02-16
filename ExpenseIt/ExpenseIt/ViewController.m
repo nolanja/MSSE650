@@ -9,7 +9,8 @@
 #import "ViewController.h"
 #import "Trip.h"
 //#import "TripSvcCache.h"
-#import "TripSvcArchive.h"
+//#import "TripSvcArchive.h"
+#import "TripSvcSQLite.h"
 #import "SecondViewController.h"
 
 @interface ViewController ()
@@ -19,13 +20,14 @@
 @implementation ViewController
 
 //TripSvcCache *tripSvc = nil;
-TripSvcArchive *tripSvc = nil;
+//TripSvcArchive *tripSvc = nil;
+TripSvcSQLite *tripSvc = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     //tripSvc = [[TripSvcCache alloc] init];
-    tripSvc = [[TripSvcArchive alloc] init];
+    tripSvc = [[TripSvcSQLite alloc] init];
 }
 
 - (void)didReceiveMemoryWarning {

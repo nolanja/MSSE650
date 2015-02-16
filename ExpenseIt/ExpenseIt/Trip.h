@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface Trip : NSObject <NSCoding>
 
+@property (nonatomic) NSInteger *id;
 @property (nonatomic, strong) NSString *tripName;
 @property (nonatomic, strong) NSString *startDate;
 @property (nonatomic, strong) NSString *endDate;

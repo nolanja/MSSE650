@@ -27,7 +27,7 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     SecondViewController * startingViewController = (SecondViewController *)segue.sourceViewController;
     
-    ViewController *destinationViewController = (ViewController *)segue.destinationViewController;
+    ViewController * destinationViewController = (ViewController *)segue.destinationViewController;
     
     startingViewController.currentTrip.text =
     destinationViewController.tripName.text;
