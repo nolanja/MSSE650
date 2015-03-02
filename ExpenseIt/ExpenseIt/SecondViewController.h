@@ -7,12 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UILabel *currentTrip;
 
+
 @property (weak, nonatomic) IBOutlet UITableView *mainTableView;
+
 
 @end

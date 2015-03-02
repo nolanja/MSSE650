@@ -1,0 +1,13 @@
+//
+//  ExpenseIt-Prefix.pch
+//  ExpenseIt
+//
+//  Created by James Nolan on 2/22/15.
+//  Copyright (c) 2015 msse650. All rights reserved.
+//
+
+#ifdef _OBJC_
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+#endif

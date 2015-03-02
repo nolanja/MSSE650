@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D04AF8A1A87F27A004FF3D8 /* TripSvcArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D04AF891A87F27A004FF3D8 /* TripSvcArchive.m */; };
 		7D6F3E741A7EB9A3006370F7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D6F3E731A7EB9A3006370F7 /* SecondViewController.m */; };
 		7DC746841A75A2840040B512 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746831A75A2840040B512 /* main.m */; };
 		7DC746871A75A2840040B512 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746861A75A2840040B512 /* AppDelegate.m */; };
@@ -16,11 +15,12 @@
 		7DC7468F1A75A2840040B512 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DC7468E1A75A2840040B512 /* Images.xcassets */; };
 		7DC746921A75A2840040B512 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7DC746901A75A2840040B512 /* LaunchScreen.xib */; };
 		7DC7469E1A75A2840040B512 /* ExpenseItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC7469D1A75A2840040B512 /* ExpenseItTests.m */; };
-		7DC746AA1A75C10B0040B512 /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746A91A75C10B0040B512 /* Trip.m */; };
-		7DC746AE1A75C3F60040B512 /* TripSvcCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DC746AD1A75C3F60040B512 /* TripSvcCache.m */; };
 		7DD7DD2F1A913C620030D68A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD7DD2E1A913C620030D68A /* libsqlite3.dylib */; };
-		7DD7DD321A91449F0030D68A /* TripSvcSQLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7DD311A91449F0030D68A /* TripSvcSQLite.m */; };
 		7DD7DD341A9165B00030D68A /* SQLiteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7DD331A9165B00030D68A /* SQLiteTests.m */; };
+		7DD7DD361A995A7A0030D68A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DD7DD351A995A7A0030D68A /* CoreData.framework */; };
+		7DD7DD391A995C450030D68A /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7DD371A995C450030D68A /* Model.xcdatamodeld */; };
+		7DD7DD3C1A9A4D170030D68A /* TripSvcCoreData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7DD3B1A9A4D170030D68A /* TripSvcCoreData.m */; };
+		7DD7DD401A9A782F0030D68A /* Trip.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DD7DD3F1A9A782F0030D68A /* Trip.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7D04AF881A87F27A004FF3D8 /* TripSvcArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSvcArchive.h; sourceTree = "<group>"; };
-		7D04AF891A87F27A004FF3D8 /* TripSvcArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripSvcArchive.m; sourceTree = "<group>"; };
 		7D6F3E721A7EB9A3006370F7 /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		7D6F3E731A7EB9A3006370F7 /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		7DC7467E1A75A2840040B512 /* ExpenseIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,15 +49,16 @@
 		7DC746971A75A2840040B512 /* ExpenseItTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseItTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7DC7469C1A75A2840040B512 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7DC7469D1A75A2840040B512 /* ExpenseItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenseItTests.m; sourceTree = "<group>"; };
-		7DC746A81A75C10B0040B512 /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
-		7DC746A91A75C10B0040B512 /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
-		7DC746AB1A75C2980040B512 /* TripSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSvc.h; sourceTree = "<group>"; };
-		7DC746AC1A75C3F60040B512 /* TripSvcCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSvcCache.h; sourceTree = "<group>"; };
-		7DC746AD1A75C3F60040B512 /* TripSvcCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripSvcCache.m; sourceTree = "<group>"; };
 		7DD7DD2E1A913C620030D68A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		7DD7DD301A91449F0030D68A /* TripSvcSQLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSvcSQLite.h; sourceTree = "<group>"; };
-		7DD7DD311A91449F0030D68A /* TripSvcSQLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripSvcSQLite.m; sourceTree = "<group>"; };
 		7DD7DD331A9165B00030D68A /* SQLiteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteTests.m; sourceTree = "<group>"; };
+		7DD7DD351A995A7A0030D68A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7DD7DD381A995C450030D68A /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		7DD7DD3A1A9A4D170030D68A /* TripSvcCoreData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSvcCoreData.h; sourceTree = "<group>"; };
+		7DD7DD3B1A9A4D170030D68A /* TripSvcCoreData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TripSvcCoreData.m; sourceTree = "<group>"; };
+		7DD7DD3D1A9A55020030D68A /* ExpenseIt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpenseIt-Prefix.pch"; sourceTree = "<group>"; };
+		7DD7DD3E1A9A782F0030D68A /* Trip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Trip.h; sourceTree = "<group>"; };
+		7DD7DD3F1A9A782F0030D68A /* Trip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Trip.m; sourceTree = "<group>"; };
+		7DD7DD421A9A7C600030D68A /* TripSvc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TripSvc.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7DD7DD361A995A7A0030D68A /* CoreData.framework in Frameworks */,
 				7DD7DD2F1A913C620030D68A /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -84,6 +84,7 @@
 		7DC746751A75A2840040B512 = {
 			isa = PBXGroup;
 			children = (
+				7DD7DD351A995A7A0030D68A /* CoreData.framework */,
 				7DD7DD2E1A913C620030D68A /* libsqlite3.dylib */,
 				7DC746801A75A2840040B512 /* ExpenseIt */,
 				7DC7469A1A75A2840040B512 /* ExpenseItTests */,
@@ -123,6 +124,7 @@
 			children = (
 				7DC746821A75A2840040B512 /* Info.plist */,
 				7DC746831A75A2840040B512 /* main.m */,
+				7DD7DD3D1A9A55020030D68A /* ExpenseIt-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -148,15 +150,12 @@
 		7DC746A71A75C0D90040B512 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7DC746A81A75C10B0040B512 /* Trip.h */,
-				7DC746A91A75C10B0040B512 /* Trip.m */,
-				7DC746AB1A75C2980040B512 /* TripSvc.h */,
-				7DC746AC1A75C3F60040B512 /* TripSvcCache.h */,
-				7DC746AD1A75C3F60040B512 /* TripSvcCache.m */,
-				7D04AF881A87F27A004FF3D8 /* TripSvcArchive.h */,
-				7D04AF891A87F27A004FF3D8 /* TripSvcArchive.m */,
-				7DD7DD301A91449F0030D68A /* TripSvcSQLite.h */,
-				7DD7DD311A91449F0030D68A /* TripSvcSQLite.m */,
+				7DD7DD371A995C450030D68A /* Model.xcdatamodeld */,
+				7DD7DD3E1A9A782F0030D68A /* Trip.h */,
+				7DD7DD3F1A9A782F0030D68A /* Trip.m */,
+				7DD7DD3A1A9A4D170030D68A /* TripSvcCoreData.h */,
+				7DD7DD3B1A9A4D170030D68A /* TripSvcCoreData.m */,
+				7DD7DD421A9A7C600030D68A /* TripSvc.h */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -262,13 +261,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7D6F3E741A7EB9A3006370F7 /* SecondViewController.m in Sources */,
-				7DC746AA1A75C10B0040B512 /* Trip.m in Sources */,
+				7DD7DD3C1A9A4D170030D68A /* TripSvcCoreData.m in Sources */,
+				7DD7DD401A9A782F0030D68A /* Trip.m in Sources */,
 				7DC7468A1A75A2840040B512 /* ViewController.m in Sources */,
-				7D04AF8A1A87F27A004FF3D8 /* TripSvcArchive.m in Sources */,
 				7DC746871A75A2840040B512 /* AppDelegate.m in Sources */,
-				7DC746AE1A75C3F60040B512 /* TripSvcCache.m in Sources */,
+				7DD7DD391A995C450030D68A /* Model.xcdatamodeld in Sources */,
 				7DC746841A75A2840040B512 /* main.m in Sources */,
-				7DD7DD321A91449F0030D68A /* TripSvcSQLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +470,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7DD7DD371A995C450030D68A /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7DD7DD381A995C450030D68A /* Model.xcdatamodel */,
+			);
+			currentVersion = 7DD7DD381A995C450030D68A /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7DC746761A75A2840040B512 /* Project object */;
 }

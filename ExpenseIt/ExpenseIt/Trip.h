@@ -2,18 +2,18 @@
 //  Trip.h
 //  ExpenseIt
 //
-//  Created by James Nolan on 1/25/15.
+//  Created by James Nolan on 2/22/15.
 //  Copyright (c) 2015 msse650. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 
 
-@interface Trip : NSObject <NSCoding>
+@interface Trip : NSManagedObject 
 
-@property (nonatomic) NSInteger *id;
-@property (nonatomic, strong) NSString *tripName;
-@property (nonatomic, strong) NSString *startDate;
-@property (nonatomic, strong) NSString *endDate;
+@property (nonatomic, retain) NSString * tripName;
+@property (nonatomic, retain) NSString * startDate;
+@property (nonatomic, retain) NSString * endDate;
 
 @end

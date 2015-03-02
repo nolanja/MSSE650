@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "TripSvcArchive.h"
 #import "Trip.h"
+#import "TripSvcCoreData.h"
 
 @interface ExpenseItTests : XCTestCase
 
@@ -27,25 +27,33 @@
     [super tearDown];
 }
 
-- (void)testTripSvcArchive {
-    // This is test for the methods in the TripSvcArchive.
-    NSLog(@"*** Starting testTripSvcArchive ***");
-    TripSvcArchive *tripSvc = [[TripSvcArchive alloc] init];
-    unsigned long initialCount = [[tripSvc retrieveAllTrips]count];
+- (void)testTripSvcCoreData {
+    // This is an example of a functional test case.
+    NSLog(@" ");
+   NSLog(@"** Starting testTripSvcCoreData ***");
     
-    Trip *trip = [[Trip alloc] init];
-    trip.tripName = @"Trip 1";
-    trip.startDate = @"12/1/2015";
-    trip.endDate = @"12/7/2015";
+    XCTAssert(YES, @"Pass");
     
-    [tripSvc createTrip:(Trip *) trip];
-    unsigned long finalCount = [[tripSvc retrieveAllTrips] count];
+   TripSvcCoreData *tripSvc= [[TripSvcCoreData alloc] init];
+    Trip *trip = [tripSvc createTrip:trip];
+   trip.tripName = @"Trip 1";
+   trip.startDate = @"12/01/2014";
+    trip.endDate = @"12/08/2014";
+    [tripSvc createTrip:trip];
     
-    XCTAssertEqual(initialCount +1, finalCount,  @"initial count %lu, final count %lu ", initialCount, finalCount);
+  NSArray *trips = [tripSvc retrieveAllTrips];
+   NSLog(@"*** number of trips: %lu", trips.count);
+
+  trip.tripName = @"Trip 1";
+  trip.startDate = @"12/06/2014";
+   trip.endDate = @"12/12/2014";
+  [tripSvc updateTrip:trip];
     
-    NSLog(@"*** Ending testContactSvcArchive ***");
+   [tripSvc deleteTrip:trip];
     
-    
+
+   NSLog(@"*** Ending testTripSvcCoreData ***");
+    NSLog(@" ");
 }
 
 - (void)testPerformanceExample {

@@ -13,7 +13,7 @@
 @protocol TripSvc <NSObject>
 
 - (Trip *) createTrip: (Trip *) trip;
-- (NSMutableArray *) retrieveAllTrips;
+- (NSArray *) retrieveAllTrips;
 - (Trip *) updateTrip: (Trip *) trip;
 - (Trip *) deleteTrip: (Trip *) trip;
 
